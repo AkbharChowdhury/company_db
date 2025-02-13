@@ -36,7 +36,7 @@ CREATE TABLE works_with(
 
 CREATE TABLE branch_supplier(
     branch_id INTEGER REFERENCES branch(branch_id) ON DELETE CASCADE ON UPDATE CASCADE,
-	supply_name VARCHAR(120) NOT NULL,
+	supplier_name VARCHAR(120) NOT NULL,
 	supply_type VARCHAR(120) NOT NULL,
 	PRIMARY KEY(branch_id, supply_name)
 );
